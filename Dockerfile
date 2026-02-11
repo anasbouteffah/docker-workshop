@@ -35,3 +35,8 @@ ENTRYPOINT ["python", "pipeline.py"]
 
 # Set entry point
 #ENTRYPOINT ["uv", "run", "python", "pipeline.py"]
+
+
+# adding uv sync --locked to the Dockerfile ensures that the exact versions of dependencies specified in the uv.lock file are installed, which helps maintain consistency across different environments and builds. This is particularly important for production deployments where you want to avoid unexpected issues caused by changes in dependency versions.
+# uv sync --locked 
+
