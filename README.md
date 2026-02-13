@@ -158,4 +158,4 @@ docker run -it \
 
 ---
 
-✅ **You are now ready to ingest NYC taxi data into PostgreSQL using Docker!**
+✅  **You are now ready to ingest NYC taxi data into PostgreSQL using Docker!**
