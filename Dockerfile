@@ -40,5 +40,5 @@ ENTRYPOINT ["uv", "run", "python", "ingest_data.py"]
 
 
 # adding uv sync --locked to the Dockerfile ensures that the exact versions of dependencies specified in the uv.lock file are installed, which helps maintain consistency across different environments and builds. This is particularly important for production deployments where you want to avoid unexpected issues caused by changes in dependency versions.
-# uv sync --locked 
+# uv sync --locked  reads the uv.lock file and installs the exact versions of dependencies listed there, ensuring that your application runs with the same dependencies regardless of when or where the Docker image is built.
 
